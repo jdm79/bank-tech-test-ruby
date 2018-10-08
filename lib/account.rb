@@ -1,6 +1,6 @@
 class Account 
-  def initialize(amount) 
-    @amount = amount
+  def initialize(balance = 0) 
+    @balance = balance
   end
 
   def get_balance 
