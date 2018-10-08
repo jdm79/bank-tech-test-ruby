@@ -16,7 +16,7 @@ RSpec.describe Account do
 
   end
 
-  context 'initial deposit upon creating a new account' do
+  context 'initial deposit' do
 
     subject { Account.new(100) }
 
@@ -41,9 +41,9 @@ RSpec.describe Account do
 
     subject { Account.new }
 
-    it "should return an udated balance upon deposit" do
-      subject.deposit(50)
-      expect(subject.get_balance).to eq(50)
+    # improve this test - use the increases by thing
+    it "should increment the balance accordingly" do
+      expect{subject.deposit(50)}.to change{subject.get_balance}.by(50)
     end
 
   end
