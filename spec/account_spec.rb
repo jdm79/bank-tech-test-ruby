@@ -31,8 +31,7 @@ RSpec.describe Account do
     subject { Account.new(100) }
 
     it "should return a balance minus the withdrawal" do
-      subject.withdraw(50)
-      expect(subject.get_balance).to eq(50)
+      expect{subject.withdraw(50)}.to change{subject.get_balance}.by(-50)
     end
 
   end
@@ -41,7 +40,6 @@ RSpec.describe Account do
 
     subject { Account.new }
 
-    # improve this test - use the increases by thing
     it "should increment the balance accordingly" do
       expect{subject.deposit(50)}.to change{subject.get_balance}.by(50)
     end
