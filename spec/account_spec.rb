@@ -14,6 +14,13 @@ RSpec.describe Account do
       expect(subject.get_balance).to eq(0)
     end
 
+    it "should calculate a series of deposits and withdrawals" do
+      subject.deposit_amount(1000)
+      subject.deposit_amount(2000)
+      subject.withdraw_amount(500)
+      expect(subject.get_balance).to eq(2500)
+    end
+
   end
 
   context 'initial deposit' do
@@ -45,5 +52,16 @@ RSpec.describe Account do
     end
 
   end
+
+  # context 'print statement' do 
+  #   subject { Account.new }
+
+  #   it "should print a log of statements" do
+  #     subject.deposit_amount(1000)
+  #     subject.deposit_amount(2000)
+  #     subject.withdraw_amount(500)
+  #     expect(subject.print_balance).to eq("Your ")
+  #   end
+  # end
 
 end
