@@ -15,4 +15,8 @@ class Account
     @balance = @balance - amount
   end
 
+  def print_balance
+    "Your current balance is #{@balance}"
+  end
+
 end
