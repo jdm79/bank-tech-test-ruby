@@ -1,3 +1,5 @@
+require 'account'
+
 RSpec.describe Account do 
 
   context "balance" do
@@ -6,7 +8,7 @@ RSpec.describe Account do
       account = Account.new(0)
       expect(account.get_balance).to eq(0)
     end
-    
+
   end
 
 end
