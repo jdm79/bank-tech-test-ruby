@@ -24,6 +24,22 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
+## User Stories
+
+```
+As a User
+So that I can manage my money
+I want to open an account
+
+As a User
+So that I can use the money in my account
+I want to make deposits and withdrawals
+
+As a User
+So that I can I can see what I've been up to with my money
+I want to be able to see an account statement
+```
+
 
 ## Design and Coding Process
 
