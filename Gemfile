@@ -11,3 +11,6 @@ gem 'rspec'
 
 # a Ruby library for syntax highlighting
 gem 'coderay'
+
+# Code style checking for RSpec files
+gem 'rubocop-rspec'
