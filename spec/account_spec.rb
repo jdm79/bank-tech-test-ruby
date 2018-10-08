@@ -53,15 +53,17 @@ RSpec.describe Account do
 
   end
 
-  # context 'print statement' do 
-  #   subject { Account.new }
+  context 'print statement' do 
 
-  #   it "should print a log of statements" do
-  #     subject.deposit_amount(1000)
-  #     subject.deposit_amount(2000)
-  #     subject.withdraw_amount(500)
-  #     expect(subject.print_balance).to eq("Your ")
-  #   end
-  # end
+    subject { Account.new }
+
+    it "should print a log of statements" do
+      subject.deposit_amount(1000)
+      subject.deposit_amount(2000)
+      subject.withdraw_amount(500)
+      expect(subject.print_balance).to eq("Your ")
+    end
+
+  end
 
 end
