@@ -26,22 +26,22 @@ RSpec.describe Account do
 
   end
 
+  context 'deposit' do
+
+    subject { Account.new }
+
+    it "should increment the balance accordingly" do
+      expect{subject.deposit_amount(50)}.to change{subject.get_balance}.by(50)
+    end
+
+  end
+
   context 'withdrawal' do
 
     subject { Account.new(100) }
 
     it "should return a balance minus the withdrawal" do
       expect{subject.withdraw(50)}.to change{subject.get_balance}.by(-50)
-    end
-
-  end
-
-  context 'deposit' do
-
-    subject { Account.new }
-
-    it "should increment the balance accordingly" do
-      expect{subject.deposit(50)}.to change{subject.get_balance}.by(50)
     end
 
   end
