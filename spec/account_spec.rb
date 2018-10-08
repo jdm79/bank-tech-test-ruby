@@ -16,7 +16,7 @@ RSpec.describe Account do
 
   end
 
-  context 'deposit' do
+  context 'initial deposit upon creating a new account' do
 
     subject { Account.new(100) }
 
@@ -32,6 +32,17 @@ RSpec.describe Account do
 
     it "should return a balance minus the withdrawal" do
       subject.withdraw(50)
+      expect(subject.get_balance).to eq(50)
+    end
+
+  end
+
+  context 'deposit' do
+
+    subject { Account.new }
+
+    it "should return an udated balance upon deposit" do
+      subject.deposit(50)
       expect(subject.get_balance).to eq(50)
     end
 
