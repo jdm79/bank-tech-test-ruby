@@ -63,5 +63,8 @@ Describe the extensions you would add if you had more time.
 
 Describe how to install and run your code and tests.
 
+* require './lib/account.rb'
+* account = Account.new
+
 
 
