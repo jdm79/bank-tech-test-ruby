@@ -6,4 +6,5 @@ class Account
   def get_balance 
     @balance
   end
+
 end
