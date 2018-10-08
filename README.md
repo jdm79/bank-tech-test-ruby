@@ -36,7 +36,7 @@ So that I can use the money in my account
 I want to make deposits and withdrawals
 
 As a User
-So that I can I can see what I've been up to with my money
+So that I can see what I've been up to with my money
 I want to be able to see an account statement
 ```
 
