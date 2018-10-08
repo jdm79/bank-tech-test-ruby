@@ -1,22 +1,23 @@
-class Account 
-  def initialize(balance = 0) 
+class Account
+
+  attr_reader :balance
+  def initialize(balance = 0)
     @balance = balance
   end
 
-  def get_balance 
-    @balance
+  # def balance
+  #   @balance
+  # end
+
+  def deposit_amount(amount)
+    @balance += amount
   end
 
-  def deposit_amount(amount) 
-    @balance = @balance + amount
-  end
-
-  def withdraw_amount(amount) 
-    @balance = @balance - amount
+  def withdraw_amount(amount)
+    @balance -= amount
   end
 
   def print_balance
     "Your current balance is #{@balance}"
   end
-
 end
