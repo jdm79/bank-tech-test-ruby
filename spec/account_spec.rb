@@ -3,7 +3,7 @@ require 'account'
 RSpec.describe Account do 
 
   context "balance" do
-    
+
     subject { Account.new }
 
     it "should create a new account" do 
@@ -29,9 +29,9 @@ RSpec.describe Account do
   context 'withdrawal' do
 
     subject { Account.new(100) }
-    subject.withdraw(50)
 
     it "should return a balance minus the withdrawal" do
+      subject.withdraw(50)
       expect(subject.get_balance).to eq(50)
     end
 
