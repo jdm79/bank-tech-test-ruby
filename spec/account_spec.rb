@@ -41,7 +41,7 @@ RSpec.describe Account do
     subject { Account.new(100) }
 
     it "should return a balance minus the withdrawal" do
-      expect{subject.withdraw(50)}.to change{subject.get_balance}.by(-50)
+      expect{subject.withdraw_amount(50)}.to change{subject.get_balance}.by(-50)
     end
 
   end
