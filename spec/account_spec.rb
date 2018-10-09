@@ -45,13 +45,13 @@ RSpec.describe Account do
   end
 
   describe 'print statement' do 
-    subject { described_class.new }
+    account = described_class.new 
 
     it 'prints a log of statements' do
-      subject.deposit_amount(1000)
-      subject.deposit_amount(2000)
-      subject.withdraw_amount(500)
-      expect(subject.print_balance).to eq("Current balance: #{2500}")
+      account.deposit_amount(1000)
+      account.deposit_amount(2000)
+      account.withdraw_amount(500)
+      expect(account.print_balance).to eq('Current balance: 2500')
     end
   end
 end
