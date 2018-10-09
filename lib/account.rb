@@ -7,13 +7,15 @@ class Account
     @transactions = []
   end
 
-  def deposit_amount(amount)
+  def deposit_amount(amount, date = Date.new.current_date)
     @balance += amount
-    transactions.push(amount)
+    details = { date: date, credit: amount, debit: 0, balance: @balance }
+    transactions.push(details)
   end
 
-  def withdraw_amount(amount)
+  def withdraw_amount(amount, date = Date.new.current_date)
     @balance -= amount
+    details = { date: date, credit: 0, debit: amount, balance: @balance }
     transactions.push(amount)
   end
 
