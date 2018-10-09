@@ -9,10 +9,12 @@ class Account
 
   def deposit_amount(amount)
     @balance += amount
+    transactions.push(amount)
   end
 
   def withdraw_amount(amount)
     @balance -= amount
+    transactions.push(amount)
   end
 
   def print_statement()
