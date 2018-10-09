@@ -36,6 +36,15 @@ RSpec.describe Account do
     end
   end
 
+  describe 'transaction history' do
+    subject { described_class.new }
+
+    it 'adds transaction to the transactions history' do
+      subject.deposit_amount(30)
+      expect(subject.transactions.length).to eq(1)
+    end
+  end
+
   describe 'deposit' do
     subject { described_class.new }
 
