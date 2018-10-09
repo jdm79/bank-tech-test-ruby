@@ -12,14 +12,6 @@ RSpec.describe Account do
       expect(subject.balance).to eq(0)
     end
 
-    it 'creates a new transactions history' do
-      expect(subject.transactions).to eq([])
-    end
-
-    it 'starts with an empty transaction history' do
-      expect(subject.transactions.length).to eq(0)
-    end
-
     it 'calculates a series of deposits and withdrawals' do
       subject.deposit_amount(1000)
       subject.deposit_amount(2000)
@@ -35,24 +27,7 @@ RSpec.describe Account do
       expect(subject.balance).to eq(100)
     end
   end
-
-  # describe 'transaction details' do
-  #   subject { described_class.new }
-
-  #   it 'creates a details object to put into the transactions history' do
-  #     expect(subject.details).to eq({})
-  #   end
-  # end
-
-  describe 'transaction history' do
-    subject { described_class.new }
-
-    it 'adds transaction to the transactions history' do
-      subject.deposit_amount(30)
-      expect(subject.transactions).to eq([{:balance=>30, :credit=>30, :date=>"09/10/2018", :debit=>0}])
-    end
-  end
-
+  
   describe 'deposit' do
     subject { described_class.new }
 
