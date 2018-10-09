@@ -13,7 +13,7 @@ class Account
     @balance -= amount
   end
 
-  def print_balance
+  def print_statement
     "Current balance: #{@balance}"
   end
 end

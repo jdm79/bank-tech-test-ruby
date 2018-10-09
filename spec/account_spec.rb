@@ -4,7 +4,7 @@ RSpec.describe Account do
   describe 'balance' do
     subject { described_class.new }
 
-    it 'creates a new account' do 
+    it 'creates a new account' do
       expect(subject).to be_instance_of(described_class)
     end
 
@@ -32,7 +32,8 @@ RSpec.describe Account do
     subject { described_class.new }
 
     it 'increments the balance accordingly' do
-      expect{subject.deposit_amount(50)}.to change(subject, :balance).by(50)
+      expect { subject.deposit_amount(50) }
+        .to change(subject, :balance).by(50)
     end
   end
 
@@ -40,7 +41,8 @@ RSpec.describe Account do
     subject { described_class.new(100) }
 
     it 'returns a balance minus the withdrawal' do
-      expect{subject.withdraw_amount(50)}.to change(subject, :balance ).by(-50)
+      expect { subject.withdraw_amount(50) }
+        .to change(subject, :balance).by(-50)
     end
   end
 
@@ -51,7 +53,7 @@ RSpec.describe Account do
       account.deposit_amount(1000)
       account.deposit_amount(2000)
       account.withdraw_amount(500)
-      expect(account.print_balance).to eq('Current balance: 2500')
+      expect(account.print_statement).to eq('Current balance: 2500')
     end
   end
 end
