@@ -4,6 +4,7 @@ class StatementPrinter
     @balance = balance
   end
   def print
-    "Current balance: #{@balance}"
+    puts "date  || credit || debit || balance"
+    puts "today ||   30   ||  40   || #{@balance}"
   end
 end
