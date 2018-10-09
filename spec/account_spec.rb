@@ -51,7 +51,7 @@ RSpec.describe Account do
       subject.deposit_amount(1000)
       subject.deposit_amount(2000)
       subject.withdraw_amount(500)
-      expect(subject.print_balance).to eq("Current balance: #{subject.balance}")
+      expect(subject.print_balance).to eq("Current balance: #{2500}")
     end
   end
 end
