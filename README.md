@@ -57,6 +57,8 @@ Describe the extensions you would add if you had more time.
 
 ## How to run the program
 
+* open up IRB on the console 
+
 ```
 > require './lib/account.rb'
 > account = Account.new
