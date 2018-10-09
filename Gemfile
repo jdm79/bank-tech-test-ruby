@@ -11,6 +11,6 @@ gem 'coderay'
 # Code style checking for RSpec files
 gem 'rubocop-rspec'
 
-#
+# Overall code coverage checker
 gem 'simplecov', require: false, group: :test
 

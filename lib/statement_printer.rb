@@ -4,10 +4,11 @@ class StatementPrinter
     @transactions = transactions
   end
   def print
-    puts " date      | credit | debit | balance "
-    puts "--------------------------------------"
+    puts ' date      | credit | debit | balance '
+    puts '--------------------------------------'
     @transactions.each do |txn|
-      puts "#{txn.date} |   #{txn.credit}   |  #{txn.debit}  |  #{txn.balance}  "
+f      puts "#{txn.date} | #{txn.credit}
+          |  #{txn.debit} | #{txn.balance}"
     end
   end
 end

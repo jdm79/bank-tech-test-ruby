@@ -31,5 +31,4 @@ class Account
   def update_history(transaction)
     @transactions.record(transaction)
   end
-
 end
