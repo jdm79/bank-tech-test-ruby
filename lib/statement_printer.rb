@@ -5,6 +5,6 @@ class StatementPrinter
   end
   def print
     puts "date  || credit || debit || balance"
-    puts "today ||   30   ||  40   || #{@balance}"
+    puts "#{@date} ||  #{@credit}  ||  #{@debit}   || #{@balance}"
   end
 end
