@@ -45,11 +45,15 @@ I want to be able to see an account statement
 
 Describe how you approached designing your solution to the problem.
 
-Describe how you structured your code. Why did you do it this way?
+To begin this challenge, I wrote down the key words from the user stories, separating the nouns from the verbs to get an idea of what kind of classes and methods I would need.
 
-Describe the dependencies your code has. What trade-offs did you make when deciding what dependencies to use?
+For printing the statement, I used a separate class which I used in the Account class using dependency injection, which allows for more loosely coupled code, although the example I have used could be improved upon. As the POODR book by Sandi Metz says, writing good code is about preserving changeability, organising code to allow for every change - and for those changes to have no unexpected side effects. 
 
-Include screenshots of your running app.
+* Describe how you structured your code. Why did you do it this way?
+
+* Describe the dependencies your code has. What trade-offs did you make when deciding what dependencies to use?
+
+* Include screenshots of your running app.
 
 
 ## Extension
