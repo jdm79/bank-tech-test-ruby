@@ -12,6 +12,10 @@ RSpec.describe Account do
       expect(subject.balance).to eq(0)
     end
 
+    it 'starts with an empty transaction history' do
+      expect(subject.transactions.length).to eq(0)
+    end
+
     it 'calculates a series of deposits and withdrawals' do
       subject.deposit_amount(1000)
       subject.deposit_amount(2000)
