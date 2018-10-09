@@ -18,6 +18,6 @@ class Account
   end
 
   def print_statement()
-    statement = StatementPrinter.new(@balance).print
+    statement = StatementPrinter.new(@transactions).print
   end
 end
