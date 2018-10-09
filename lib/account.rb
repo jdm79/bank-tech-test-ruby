@@ -1,3 +1,4 @@
+require_relative 'statement_printer'
 # Main class
 class Account
   attr_reader :balance
@@ -13,7 +14,7 @@ class Account
     @balance -= amount
   end
 
-  def print_statement
-    "Current balance: #{@balance}"
+  def print_statement()
+    statement = StatementPrinter.new(@balance).print
   end
 end
