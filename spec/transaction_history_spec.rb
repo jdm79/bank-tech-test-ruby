@@ -6,4 +6,8 @@ describe TransactionHistory do
   it "creates a new transactionHistory" do
     expect(subject).to be_instance_of(TransactionHistory)
   end
+
+  it "starts with an empty list of transactions" do
+    expect(subject.transactions).to eq([])
+  end
 end
