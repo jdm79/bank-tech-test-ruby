@@ -32,7 +32,7 @@ RSpec.describe Account do
     subject { described_class.new }
 
     it 'increments the balance accordingly' do
-      expect{subject.deposit_amount(50)}.to change{subject.balance}.by(50)
+      expect{subject.deposit_amount(50)}.to change(subject, :balance).by(50)
     end
   end
 
@@ -40,12 +40,12 @@ RSpec.describe Account do
     subject { described_class.new(100) }
 
     it 'returns a balance minus the withdrawal' do
-      expect{subject.withdraw_amount(50)}.to change{subject.balance}.by(-50)
+      expect{subject.withdraw_amount(50)}.to change(subject, :balance ).by(-50)
     end
   end
 
-  describe 'print statement' do 
-    account = described_class.new 
+  describe 'print statement' do
+    account = described_class.new
 
     it 'prints a log of statements' do
       account.deposit_amount(1000)
