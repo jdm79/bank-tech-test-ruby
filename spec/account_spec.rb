@@ -36,6 +36,14 @@ RSpec.describe Account do
     end
   end
 
+  # describe 'transaction details' do
+  #   subject { described_class.new }
+
+  #   it 'creates a details object to put into the transactions history' do
+  #     expect(subject.details).to eq({})
+  #   end
+  # end
+
   describe 'transaction history' do
     subject { described_class.new }
 
