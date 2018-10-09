@@ -12,6 +12,10 @@ RSpec.describe Account do
       expect(subject.balance).to eq(0)
     end
 
+    it 'creates a new transactions history' do
+      expect(subject.transactions).to eq([])
+    end
+
     it 'starts with an empty transaction history' do
       expect(subject.transactions.length).to eq(0)
     end
