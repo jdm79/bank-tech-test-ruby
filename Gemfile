@@ -10,3 +10,7 @@ gem 'coderay'
 
 # Code style checking for RSpec files
 gem 'rubocop-rspec'
+
+#
+gem 'simplecov', require: false, group: :test
+
