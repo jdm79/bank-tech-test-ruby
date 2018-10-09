@@ -1,5 +1,9 @@
+# prints out a statement
 class StatementPrinter
+  def initialize(balance)
+    @balance = balance
+  end
   def print
-    'hello world'
+    "Current balance: #{@balance}"
   end
 end
