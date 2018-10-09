@@ -41,7 +41,8 @@ RSpec.describe Account do
 
     it 'adds transaction to the transactions history' do
       subject.deposit_amount(30)
-      expect(subject.transactions.length).to eq(1)
+      subject.withdraw_amount(20)
+      expect(subject.transactions).to eq([30, 20])
     end
   end
 
