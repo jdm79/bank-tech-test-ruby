@@ -6,6 +6,6 @@ class TransactionHistory
   end
 
   def record(txn)
-    @transactions << txn
+    @transactions.push(txn)
   end
 end
