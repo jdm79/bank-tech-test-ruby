@@ -80,7 +80,8 @@ $ rubocop
 ```
 
 ### How to run the actual program in a REPL
-* open up IRB on the console 
+
+Open up IRB on the console:
 
 ```
 > require './lib/account.rb'
