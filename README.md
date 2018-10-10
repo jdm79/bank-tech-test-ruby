@@ -57,12 +57,25 @@ Describe the extensions you would add if you had more time.
 
 ## How to run the program
 
+### First steps:
+
 ```
 $ git clone git@github.com:jdm79/bank-tech-test-ruby.git
 $ cd bank-tech-test-ruby
 $ bundle
 ```
 
+### How to test this program
+
+Whilst in the root directory of this program:
+```
+# To run the unit tests
+$ rspec
+# To run code linter
+$ rubocop
+```
+
+### How to run the actual program in a REPL
 * open up IRB on the console 
 
 ```
