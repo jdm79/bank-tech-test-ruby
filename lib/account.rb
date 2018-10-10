@@ -22,7 +22,8 @@ class Account
       details = { date: date, credit: 0, debit: amount, balance: @balance }
       update_history(Transaction.new(details))
     else
-      puts 'Insufficient funds'
+      puts "Insufficient funds: you tried to withdraw $#{amount}, 
+            but only have $#{@balance} in your account"
     end
   end
 
