@@ -52,12 +52,12 @@ For printing the statement, I used a separate class which I used in the Account 
 
 * No need for a date class, possibly merge the transaction class and transaction history class into the account class
 * FEATURE TESTS
+* Mock tests that use methods from other classes
 * Remove the tightly-coupled dependency injection of the statement printer class in the account class
 * More encapsulation
-* Improve the styling of the statement output
 * Add decimal point transactions
 * Fix all the Rubocop warnings
-
+* 'Name your test subject if you need to reference it explicitly' - investigate this
 
 ## How to run the program
 
