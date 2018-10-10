@@ -50,9 +50,13 @@ For printing the statement, I used a separate class which I used in the Account 
 
 ## Extension
 
-Try very hard to complete all the tasks in the tech test. If you run out of time, outline how you would have approached the sections you didn't get to.
-
-Describe the extensions you would add if you had more time.
+* No need for a date class, possibly merge the transaction class and transaction history class into the account class
+* FEATURE TESTS
+* Remove the tightly-coupled dependency injection of the statement printer class in the account class
+* More encapsulation
+* Improve the styling of the statement output
+* Add decimal point transactions
+* Fix all the Rubocop warnings
 
 
 ## How to run the program
