@@ -1,14 +1,14 @@
 require 'account'
 
 RSpec.describe Account do
-  describe 'balance' do
+  describe 'deposit' do
     subject { described_class.new }
 
-    it 'calculates a series of transactions' do
+    it 'can deposit funds into the account' do
       subject.deposit_amount(1000)
       subject.deposit_amount(2000)
-      subject.withdraw_amount(500)
-      expect(subject.balance).to eq(2500)
+      subject.deposit_amount(2500)
+      expect(subject.balance).to eq(5500)
     end
   end
 end
