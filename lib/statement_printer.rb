@@ -7,7 +7,7 @@ class StatementPrinter
     puts ' date      | credit | debit | balance '
     puts '--------------------------------------'
     @transactions.each do |txn|
-f      puts "#{txn.date} | #{txn.credit}
+       puts "#{txn.date} | #{txn.credit}
           |  #{txn.debit} | #{txn.balance}"
     end
   end
