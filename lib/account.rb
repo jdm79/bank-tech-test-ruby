@@ -23,7 +23,7 @@ class Account
   end
 
   def print_statement
-    statement = StatementPrinter.new(@transactions).print
+    statement = StatementPrinter.new(@transactions.transactions).print
   end
 
   private
