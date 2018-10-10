@@ -22,7 +22,7 @@ class Account
       details = { date: date, credit: 0, debit: amount, balance: @balance }
       update_history(Transaction.new(details))
     else
-      puts "Insufficient funds"
+      puts 'Insufficient funds'
     end
   end
 
