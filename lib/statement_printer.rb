@@ -3,7 +3,7 @@ class StatementPrinter
   def initialize(transactions)
     @transactions = transactions
   end
-  
+
   def print
     puts ' date      | credit | debit | balance '
     puts '--------------------------------------'

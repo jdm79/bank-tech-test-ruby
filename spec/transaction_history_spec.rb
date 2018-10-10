@@ -1,4 +1,4 @@
-require "transaction_history"
+require 'transaction_history'
 
 describe TransactionHistory do
   subject { described_class.new }

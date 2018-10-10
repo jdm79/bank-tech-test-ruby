@@ -1,15 +1,15 @@
 require "transaction"
 
 describe Transaction do
-  txn = {date: "09/10/2018", credit: 100, debit: 50, balance: 50}
-  subject { Transaction.new(txn) }
+  txn = { date: '09/10/2018', credit: 100, debit: 50, balance: 50 }
+  subject { described_class.new(txn) }
 
   it 'creates a new transaction' do
-    expect(subject).to be_instance_of(Transaction)
+    expect(subject).to be_instance_of(described_class)
   end
 
   it 'has a date value of 09/10/2018' do
-    expect(subject.date).to eq("09/10/2018")
+    expect(subject.date).to eq('09/10/2018')
   end
   it 'has a credit value of 100' do
     expect(subject.credit).to eq(100)
