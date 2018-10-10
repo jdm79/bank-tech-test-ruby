@@ -1,7 +1,7 @@
 require "transaction_history"
 
 describe TransactionHistory do
-  subject { TransactionHistory.new }
+  subject { described_class.new }
 
   it 'creates a new transactionHistory' do
     expect(subject).to be_instance_of(described_class)
