@@ -27,7 +27,7 @@ class Account
   end
 
   def print_statement
-    statement = StatementPrinter.new(@transactions.transactions).print
+    StatementPrinter.new(@transactions.transactions).print
   end
 
   private
