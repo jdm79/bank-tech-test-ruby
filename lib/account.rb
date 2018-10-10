@@ -17,9 +17,13 @@ class Account
   end
 
   def withdraw_amount(amount, date = Date.new.current_date)
-    @balance -= amount
-    details = { date: date, credit: 0, debit: amount, balance: @balance }
-    update_history(Transaction.new(details))
+    if @balance - amount > 0
+      @balance -= amount
+      details = { date: date, credit: 0, debit: amount, balance: @balance }
+      update_history(Transaction.new(details))
+    else
+      puts "Insufficient funds"
+    end
   end
 
   def print_statement
