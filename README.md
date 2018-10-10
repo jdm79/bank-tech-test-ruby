@@ -57,6 +57,12 @@ Describe the extensions you would add if you had more time.
 
 ## How to run the program
 
+```
+$ git clone git@github.com:jdm79/bank-tech-test-ruby.git
+$ cd bank-tech-test-ruby
+$ bundle
+```
+
 * open up IRB on the console 
 
 ```
