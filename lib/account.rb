@@ -15,7 +15,7 @@ class Account
     update_history(Transaction.new(details))
   end
 
-  def withdraw_amount(amount, date = Date.new.current_date)
+  def withdraw_amount(amount, date = Time.new.strftime('%d/%m/%Y'))
     if @balance - amount > 0
       @balance -= amount
       details = { date: date, credit: 0, debit: amount, balance: @balance }
