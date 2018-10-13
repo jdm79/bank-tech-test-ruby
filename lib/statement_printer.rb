@@ -7,8 +7,8 @@ class StatementPrinter
   def print
     puts ' date      || credit || debit || balance '
     puts '--------------------------------------'
-    @transactions.each do |txn|
-      puts "#{txn.date}   || #{txn.credit}    ||  #{txn.debit}    || #{txn.balance}"
+    @transactions.each do |transaction|
+      puts "#{transaction.date}   || #{transaction.credit}    ||  #{transaction.debit}    || #{transaction.balance}"
     end
   end
 end

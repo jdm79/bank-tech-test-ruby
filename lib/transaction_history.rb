@@ -5,7 +5,7 @@ class TransactionHistory
     @transactions = []
   end
 
-  def record(txn)
-    @transactions.push(txn)
+  def record(transaction)
+    @transactions.push(transaction)
   end
 end
