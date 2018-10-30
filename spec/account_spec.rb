@@ -12,11 +12,9 @@ RSpec.describe Account do
       expect(subject.balance).to eq(0)
     end
 
-    it 'calculates a series of deposits and withdrawals' do
+    it 'deposits an amount correctly upon initiation' do
       subject.deposit_amount(1000)
-      subject.deposit_amount(2000)
-      subject.withdraw_amount(500)
-      expect(subject.balance).to eq(2500)
+      expect(subject.balance).to eq(1000)
     end
   end
 
@@ -43,17 +41,6 @@ RSpec.describe Account do
     it 'returns a balance minus the withdrawal' do
       expect { subject.withdraw_amount(50) }
         .to change(subject, :balance).by(-50)
-    end
-  end
-
-  describe 'balance' do
-    account = described_class.new
-
-    it 'calculates balance' do
-      account.deposit_amount(1000)
-      account.deposit_amount(2000)
-      account.withdraw_amount(500)
-      expect(account.balance).to eq(2500)
     end
   end
 end

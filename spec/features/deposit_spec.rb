@@ -6,9 +6,7 @@ RSpec.describe Account do
 
     it 'can deposit funds into the account' do
       subject.deposit_amount(1000)
-      subject.deposit_amount(2000)
-      subject.deposit_amount(2500)
-      expect(subject.balance).to eq(5500)
+      expect(subject.balance).to eq(1000)
     end
   end
 end
